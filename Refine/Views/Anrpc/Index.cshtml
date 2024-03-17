@@ -1,0 +1,86 @@
+﻿@model AnrpcRepository
+@{
+    Layout = "_MyLayout";
+}
+
+<style>
+    .rounded-table {
+        border-radius: 10px; /* يمكنك تعديل قيمة الشعاع حسب التفضيلات الخاصة بك */
+        overflow: hidden; /* لضمان عدم ظهور جزء من التقويس خارج الجدول */
+    }
+
+    .smoothscroll{
+        width:10%;
+     
+    }
+
+    .hero-section .container .row {
+        height: 0vh;
+        width: 100%;
+
+    }
+
+    .hero-section {
+        height: 100vh;
+        padding-bottom: 600px;
+    }
+
+</style>
+@switch (ViewBag.id)
+{
+    case 1:
+        <partial name="Asrpartial" model="@Model.table1List" />
+        <partial name="Asrpartial" model="@Model.table2List" />
+        break;
+
+    case 2:
+        <partial name="Asrpartial" model="@Model.table3List" />
+        break;
+
+    case 3:
+        <partial name="Asrpartial" model="@Model.table4List" />
+        break;
+
+   
+}
+
+
+<button class="btn custom-btn smoothscroll" onclick="saveChanges()">حفظ التغييرات</button>
+
+<script>
+    function saveChanges() {
+        var updatedItems = [];
+
+        // Collect changes from each editable cell
+        $(".editable").each(function () {
+            var id = $(this).data("id");
+            var field = $(this).data("field");
+            var value = $(this).text().trim(); // Trim any leading/trailing spaces
+
+            // Replace empty string with null if the cell is empty
+            value = value === "" ? null : value;
+
+            updatedItems.push({
+                Id: id,
+                Field: field,
+                Value: value
+            });
+        });
+
+        // Send an AJAX request to update all items
+        $.ajax({
+            url: "/Anrpc/UpdateAll",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(updatedItems),
+            success: function () {
+                // Reload the page after successful update
+                alert("Saved Successfully")
+            },
+            error: function () {
+                alert("Error updating items");
+            }
+        });
+    }
+</script>
+

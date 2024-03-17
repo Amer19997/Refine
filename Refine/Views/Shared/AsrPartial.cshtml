@@ -1,0 +1,53 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    Type itemType = Model.First().GetType(); // Assuming the items are not empty
+}
+
+<table class="table table-hover table-bordered rounded-table table table-hover">
+    <thead>
+        <tr class="table-light text-center">
+           
+            <th class="text-center"></th>
+            @foreach (var propertyInfo in itemType.GetProperties().Reverse())
+            {
+                if (propertyInfo.Name != "Id")
+                {
+                    var displayNameAttribute = propertyInfo.GetCustomAttributes(typeof(DisplayAttribute), true)
+                    .FirstOrDefault() as DisplayAttribute;
+
+                    string displayName = displayNameAttribute?.Name ?? propertyInfo.Name;
+                   
+                    <th class="text-center">
+                        @displayName
+                    </th>
+                }
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-secondary text-center">
+                <th></th>
+           @*      <td class="text-center">
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Category" asp-action="Delete">
+                            <i class="bi bi-trash-fill"></i>
+                        </a>
+                    </div>
+                </td> *@
+                @foreach (var propertyInfo in itemType.GetProperties().Reverse())
+                {
+                    if (propertyInfo.Name != "Id")
+                    {
+                        var value = item.GetType().GetProperty(propertyInfo.Name)?.GetValue(item);
+                        <td contenteditable="true" class="editable" data-id="@item.Id" data-field="@propertyInfo.Name">@((value != null) ? value.ToString() : "")</td>
+                    }
+                     
+                }
+                
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Festava Live - Bootstrap 5 CSS Template</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
+</head>
+
+<body>
+
+    <main>
+
+        
+
+
+        
+
+        @RenderBody()
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+             
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+                        
+                            <h1 class="text-white mb-1">اهلا وسهلا بكم في التقارير اليومية</h1>
+                            <h1 class="text-white mb-5">اللهيئة العامة للبترول</h1>
+ 
+                        <a class="btn custom-btn smoothscroll infobtn mt-5" href="#section_2">معلومات اكثر</a>
+                        
+                        <a class="btn custom-btn smoothscroll loginbtn mt-5" asp-controller="Account" asp-action="AdvanceLogin">تسجيل الدخول</a>
+                      
+                    </div>
+
+               
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="" type="video/mp4">
+@*                     /video/pexels-kelly-lacy-9339478 (2160p).mp4
+ *@                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    </main>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

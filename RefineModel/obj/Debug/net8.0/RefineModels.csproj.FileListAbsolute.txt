@@ -1,0 +1,14 @@
+E:\Refine\RefineModel\bin\Debug\net8.0\RefineModels.deps.json
+E:\Refine\RefineModel\bin\Debug\net8.0\RefineModels.runtimeconfig.json
+E:\Refine\RefineModel\bin\Debug\net8.0\RefineModels.dll
+E:\Refine\RefineModel\bin\Debug\net8.0\RefineModels.pdb
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.csproj.AssemblyReference.cache
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.GeneratedMSBuildEditorConfig.editorconfig
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.AssemblyInfoInputs.cache
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.AssemblyInfo.cs
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.csproj.CoreCompileInputs.cache
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.dll
+E:\Refine\RefineModel\obj\Debug\net8.0\refint\RefineModels.dll
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.pdb
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.genruntimeconfig.cache
+E:\Refine\RefineModel\obj\Debug\net8.0\ref\RefineModels.dll

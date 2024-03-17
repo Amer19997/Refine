@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login V18</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/css-hamburgers/hamburgers.min.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/animsition/css/animsition.min.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/select2/select2.min.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/daterangepicker/daterangepicker.css">
+    <!--=========================================/======================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!--===============================================================================================-->
+</head>
+@model LoginModelView
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_LoginLayout";
+}
+
+
+<body style="background-color: #666666;">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100%; /* Adjust this value according to your design */
+            margin: 0 px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align the form to the right */
+            height: 100%; /* Full height of the viewport */
+            box-sizing: border-box;
+            padding: 0px;
+        }
+
+        .login-container {
+            width: 50%;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center children horizontally */
+            background-color: rgb(0 0 0 / 40%);
+            box-shadow: 0 0 10px rgb(79 74 74 / 79%);
+            /*     background-color: rgb(0 0 0 / 40%);
+                    box-shadow: 0 0 10px rgb(79 74 74 / 79%); */
+        }
+
+        .login100-form {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+           
+            background-color: rgb(0 0 0 / 40%);
+            box-shadow: 0 0 10px rgb(79 74 74 / 79%);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 55px 55px 55px;
+        }
+
+        .wrap-input100 {
+            background: white;
+            width: 50%;
+        }
+
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            padding-top: 0px;
+            height: 100%;
+        }
+
+            .hero-section .container {
+                padding-bottom: 0px;
+            }
+
+        .login100-form-title {
+            width: 100%;
+            display: block;
+            font-family: Andalus, Times, serif, sans-serif;
+            font-size: 100px;
+            color: white;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .form-group {
+            width: 50%;
+        }
+
+        .form-control {
+            padding: 1.5rem 0.75rem;
+        }
+
+        label {
+            display: block;
+            margin: 0;
+            color: azure;
+            align-self: end;
+            text-align: end;
+        }
+
+        .container-login100-form-btn {
+            width: 50%;
+        }
+
+        .login100-form-btn {
+            background: #149f04;
+        }
+
+        .w-full {
+            width: 50%;
+        }
+    </style>
+
+    <div class="container">
+        <div class="login-container">
+            <form asp-controller="Account" asp-action="AdvanceLogin" class="login100-form ">
+
+                <span class="login100-form-title p-b-43">
+                    تسجيل الدخول
+                </span>
+
+                <!-- Video Background -->
+                @*                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                *@                <div class="form-group">
+                    <label asp-for="UsernameOrEmail" class="control-label">اسم المسنخدم او البريد الالكتروني</label>
+                    <input asp-for="UsernameOrEmail" class="form-control" />
+                    <span asp-validation-for="UsernameOrEmail" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label">كلمة المرور</label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="flex-sb-m w-full p-t-3 p-b-32">
+                    <div class="contact100-form-checkbox">
+                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                        <label class="label-checkbox100" for="ckb1">
+                            تذكرني
+                        </label>
+
+                    </div>
+
+
+                </div>
+                @*      <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                </div> *@
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="submit">
+                        تسجي
+                    </button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    @*  <div class="login100-more" style="background-image: url('/images/bg-01.jpg');">
+    </div> *@
+    @*     <div class="login100-more">
+    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+    <source src="/video/pexels-kelly-lacy-9339478 (2160p).mp4" type="video/mp4">
+
+    Your browser does not support the video tag.
+    </video>
+    </div> *@
+
+
+
+    <!--===============================================================================================-->
+    <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--=========/======================================================================================-->
+    <script src="/vendor/animsition/js/animsition.min.js"></script>
+    <!--=========/======================================================================================-->
+    <script src="/vendor/bootstrap/js/popper.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--=========/======================================================================================-->
+    <script src="/vendor/select2/select2.min.js"></script>
+    <!--=========/======================================================================================-->
+    <script src="/vendor/daterangepicker/moment.min.js"></script>
+    <script src="/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--=========/======================================================================================-->
+    <script src="/vendor/countdowntime/countdowntime.js"></script>
+    <!--=========/======================================================================================-->
+    <script src="/js/main.js"></script>
+
+    <script>
+        // Adjust video size to match container size
+        document.getElementById('video-bg').style.width = '100%';
+        document.getElementById('video-bg').style.height = '100%';
+    </script>
+
+</body>
+</html>
