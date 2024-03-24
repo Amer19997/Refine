@@ -7,6 +7,7 @@ E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.GeneratedMSBuildEditorConfig
 E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.AssemblyInfoInputs.cache
 E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.AssemblyInfo.cs
 E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.csproj.CoreCompileInputs.cache
+E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.sourcelink.json
 E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.dll
 E:\Refine\RefineModel\obj\Debug\net8.0\refint\RefineModels.dll
 E:\Refine\RefineModel\obj\Debug\net8.0\RefineModels.pdb

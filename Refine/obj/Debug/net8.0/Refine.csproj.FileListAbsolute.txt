@@ -256,6 +256,7 @@ C:\Users\Amer\source\repos\Refine\Refine\obj\Debug\net8.0\scopedcss\Views\Shared
 C:\Users\Amer\source\repos\Refine\Refine\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Refine\Refine\bin\Debug\net8.0\appsettings.Development.json
 E:\Refine\Refine\bin\Debug\net8.0\appsettings.json
+E:\Refine\Refine\bin\Debug\net8.0\appsettings.Production.json
 E:\Refine\Refine\bin\Debug\net8.0\Refine.staticwebassets.runtime.json
 E:\Refine\Refine\bin\Debug\net8.0\Refine.exe
 E:\Refine\Refine\bin\Debug\net8.0\Refine.deps.json
@@ -502,6 +503,7 @@ E:\Refine\Refine\obj\Debug\net8.0\Refine.csproj.CoreCompileInputs.cache
 E:\Refine\Refine\obj\Debug\net8.0\Refine.MvcApplicationPartsAssemblyInfo.cache
 E:\Refine\Refine\obj\Debug\net8.0\Refine.RazorAssemblyInfo.cache
 E:\Refine\Refine\obj\Debug\net8.0\Refine.RazorAssemblyInfo.cs
+E:\Refine\Refine\obj\Debug\net8.0\Refine.sourcelink.json
 E:\Refine\Refine\obj\Debug\net8.0\staticwebassets.build.json
 E:\Refine\Refine\obj\Debug\net8.0\staticwebassets.development.json
 E:\Refine\Refine\obj\Debug\net8.0\staticwebassets\msbuild.Refine.Microsoft.AspNetCore.StaticWebAssets.props
@@ -520,5 +522,3 @@ E:\Refine\Refine\obj\Debug\net8.0\refint\Refine.dll
 E:\Refine\Refine\obj\Debug\net8.0\Refine.pdb
 E:\Refine\Refine\obj\Debug\net8.0\Refine.genruntimeconfig.cache
 E:\Refine\Refine\obj\Debug\net8.0\ref\Refine.dll
-E:\Refine\Refine\obj\Debug\net8.0\Refine.sourcelink.json
-E:\Refine\Refine\bin\Debug\net8.0\appsettings.Production.json
