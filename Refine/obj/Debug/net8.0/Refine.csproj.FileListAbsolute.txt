@@ -520,3 +520,5 @@ E:\Refine\Refine\obj\Debug\net8.0\refint\Refine.dll
 E:\Refine\Refine\obj\Debug\net8.0\Refine.pdb
 E:\Refine\Refine\obj\Debug\net8.0\Refine.genruntimeconfig.cache
 E:\Refine\Refine\obj\Debug\net8.0\ref\Refine.dll
+E:\Refine\Refine\obj\Debug\net8.0\Refine.sourcelink.json
+E:\Refine\Refine\bin\Debug\net8.0\appsettings.Production.json

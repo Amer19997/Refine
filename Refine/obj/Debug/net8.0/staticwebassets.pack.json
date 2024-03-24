@@ -1713,8 +1713,8 @@
       "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
     },
     {
-      "Id": "E:\\Refine\\Refine\\wwwroot\\video\\pexels-kelly-lacy-9339478 (2160p).mp4",
-      "PackagePath": "staticwebassets\\video\\pexels-kelly-lacy-9339478 (2160p).mp4"
+      "Id": "E:\\Refine\\Refine\\wwwroot\\video\\pexels-kelly-lacy-9339478 (2160p).mp4.mp4",
+      "PackagePath": "staticwebassets\\video\\pexels-kelly-lacy-9339478 (2160p).mp4.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Refine.Microsoft.AspNetCore.StaticWebAssets.props",
