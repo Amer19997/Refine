@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 namespace BulkyBook.DataAccess.DbInitializer {
     public class DbInitializer : IDbInitializer {
 
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+ 		private readonly UserManager<ApplicationUser> _userManager;
+		private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ApplicationDbContext _db;
 
         public DbInitializer(
-            UserManager<IdentityUser> userManager,
+            UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole> roleManager,
             ApplicationDbContext db) {
             _roleManager = roleManager;
@@ -39,6 +39,7 @@ namespace BulkyBook.DataAccess.DbInitializer {
 
 
 
+            //create roles if they are not created
            
 
             return;

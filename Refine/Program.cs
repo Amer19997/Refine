@@ -22,7 +22,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAnrpcRepository, AnrpcRepository>();
 
 builder.Services.AddScoped<IAsrRepository, AsrRepository>();
-//builder.Services.AddScoped<IDbInitializer, DbInitializer>();
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
 var app = builder.Build();
 
@@ -42,18 +42,18 @@ app.UseAuthentication();
 app.UseAuthorization();
 //app.UseSession();
 
-//SeedDatabase();
+SeedDatabase();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-//void SeedDatabase()
-//{
-//	using (var scope = app.Services.CreateScope())
-//	{
-//		var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
-//		dbInitializer.Initialize();
-//	}
-//}
+void SeedDatabase()
+{
+	using (var scope = app.Services.CreateScope())
+	{
+		var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+		dbInitializer.Initialize();
+	}
+}
