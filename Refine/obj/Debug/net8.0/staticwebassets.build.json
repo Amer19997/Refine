@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fQhFdVicnTRz65wPfW6xDJx39inUTlGnC/lz4+ROw9s=",
+  "Hash": "s6UX3CMJvIJm/bcQOKbUsIAjqPjeRSbOcPi3ff1aEXQ=",
   "Source": "Refine",
   "BasePath": "_content/Refine",
   "Mode": "Default",
@@ -8206,12 +8206,12 @@
       "OriginalItemSpec": "wwwroot\\vendor\\select2\\select2.min.js"
     },
     {
-      "Identity": "E:\\Refine\\Refine\\wwwroot\\video\\pexels-kelly-lacy-9339478 (2160p).mp4.mp4",
+      "Identity": "E:\\Refine\\Refine\\wwwroot\\video\\pexels-kelly-lacy-9339478 (2160p).mp4",
       "SourceId": "Refine",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Refine\\Refine\\wwwroot\\",
       "BasePath": "_content/Refine",
-      "RelativePath": "video/pexels-kelly-lacy-9339478 (2160p).mp4.mp4",
+      "RelativePath": "video/pexels-kelly-lacy-9339478 (2160p).mp4",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8222,7 +8222,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\video\\pexels-kelly-lacy-9339478 (2160p).mp4.mp4"
+      "OriginalItemSpec": "wwwroot\\video\\pexels-kelly-lacy-9339478 (2160p).mp4"
     }
   ]
 }
