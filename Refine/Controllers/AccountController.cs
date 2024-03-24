@@ -75,7 +75,7 @@ namespace Demo.Controllers
                     if (found)
                     {
                         await _signInManager.SignInAsync(User, isPersistent: loginuser.RememberMe);
-                        if (User.UserName == "Asr"|| User.UserName == "Amer")
+                        if ( User.UserName == "Amer")
                         {
                             return RedirectToAction("Categories", "Asr");
                         }
